@@ -45,7 +45,7 @@ body {
 }
 
 
-.dashboard-grid {
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -55,7 +55,7 @@ body {
 }
 
 
-.menu-btn {
+.Diabox {
     color: var(--maroon);
     font-size: 1.3rem;
     font-weight: 600;
@@ -69,18 +69,18 @@ body {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.menu-btn:hover {
+.Diabox:hover {
     transform: translateY(-2px);
     box-shadow: 5px 5px 0px var(--maroon);
 }
 
-.menu-btn:active {
+.Diabox:active {
     transform: translateY(2px);
     box-shadow: 3px 3px 0px var(--maroon);
 }
 
 
-#modal-outfits, #modal-stationary {
+#outfits, #stationary {
     display: none;
     position: fixed;
     top: 50%;
@@ -106,19 +106,19 @@ body {
 
 }
 
-#modal-outfits ul, #modal-stationary h2 {
+#outfits h2, #stationary h2 {
     color: var(--maroon);
     font-size: 1.8rem;
     margin-bottom: 12px;
 }
 
-#modal-outfits ul, #modal-stationary ul {
+#outfits ul, #stationary ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#modal-outfits ul, #modal-stationary li {
+#outfits li, #stationary li {
     color: var(--maroon);
     font-size: 1.1rem;
     margin-bottom: 8px;
@@ -127,11 +127,11 @@ body {
 
 /* for spacing to stay even */
 
-#modal-outfits li:last-child, #modal-stationary li:last-child {
+#outfits li:last-child, #stationary li:last-child {
     margin-bottom: 0;
 }
 
-#modal-outfits li::before, #modal-stationary li::before {
+#outfits li::before, #stationary li::before {
     content: "🍒 ";
     margin-right: 4px;
 }

@@ -1,4 +1,4 @@
-function openNotebook(modalId) {
+function OpenDiabox(modalId) {
     document.getElementById(modalId).style.display = 'flex';
 }
 

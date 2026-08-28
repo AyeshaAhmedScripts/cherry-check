@@ -16,31 +16,31 @@
     <h1 class="title">Cherry Check</h1>
     <!-- Button -->
 
-    <div class="dashboard-grid">
+    <div class="grid">
 
-        <button class="menu-btn" onclick="openNotebook('modal-outfits')">Outfits</button>
-        <button class="menu-btn" onclick="openNotebook('modal-stationary')">Stationary</button>
+        <button class="Diabox" onclick="OpenDiabox('outfits')">Outfits</button>
+        <button class="Diabox" onclick="OpenDiabox('stationary')">Stationary</button>
         </div>    
 
-    <div id="modal-outfits" style="display: none;">
-        <h2 id="modalTitle">Outfits CheckList:</h2>
+    <div id="outfits" style="display: none;">
+        <h2 id="Title">Outfits:</h2>
         <ul>
-            <li>Oversized sweater & denim</li>
-            <li>Floral dress & boots</li>
+            <li>hoodie</li>
+            <li>dress</li>
         </ul>
 
-        <button class="close-btn" onclick="closeNotebook('modal-outfits')">Close</button>
+        <button class="close-btn" onclick="closeNotebook('outfits')">Close</button>
     </div>
 
 
-    <div id="modal-stationary" style="display: none;">
-        <h2 id="modalTitle">Stationary CheckList:</h2>
-        <ul id="modalList">
+    <div id="stationary" style="display: none;">
+        <h2 id="Title">Stationary:</h2>
+        <ul>
             <li>Scissors</li>
             <li>Glue</li>
         </ul>
 
-        <button class="close-btn" onclick="closeNotebook('modal-stationary')">Close</button>
+        <button class="close-btn" onclick="closeNotebook('stationary')">Close</button>
     </div>
     
     
