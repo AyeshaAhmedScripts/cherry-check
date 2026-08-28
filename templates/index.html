@@ -17,22 +17,32 @@
     <!-- Button -->
 
     <div class="dashboard-grid">
-        <button class="menu-btn" onclick="openNotebook('Outfits')">Outfits</button>
-        <button class="menu-btn" onclick="openNotebook('Outfits')">Outfits</button>
-        <button class="menu-btn" onclick="openNotebook('Outfits')">Outfits</button>
-        <button class="menu-btn" onclick="openNotebook('Outfits')">Outfits</button>
 
+        <button class="menu-btn" onclick="openNotebook('modal-outfits')">Outfits</button>
+        <button class="menu-btn" onclick="openNotebook('modal-stationary')">Stationary</button>
         </div>    
 
-    <div id="notebookModal" style="display: none;">
+    <div id="modal-outfits" style="display: none;">
         <h2 id="modalTitle">Outfits CheckList:</h2>
         <ul>
             <li>Oversized sweater & denim</li>
             <li>Floral dress & boots</li>
         </ul>
 
-        <button class="close-btn" onclick="closeNotebook()">Close</button>
+        <button class="close-btn" onclick="closeNotebook('modal-outfits')">Close</button>
     </div>
+
+
+    <div id="modal-stationary" style="display: none;">
+        <h2 id="modalTitle">Stationary CheckList:</h2>
+        <ul id="modalList">
+            <li>Scissors</li>
+            <li>Glue</li>
+        </ul>
+
+        <button class="close-btn" onclick="closeNotebook('modal-stationary')">Close</button>
+    </div>
+    
     
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>

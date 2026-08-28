@@ -34,6 +34,7 @@ body {
     box-shadow: 4px 4px 0px var(--maroon);
     text-align: center;
     user-select: none;
+        animation: blinkSettle 1.5s ease-out forwards;
 }
 
 @media (max-width: 480px) {
@@ -79,7 +80,8 @@ body {
 }
 
 
-#notebookModal {
+#modal-outfits, #modal-stationary {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -104,19 +106,19 @@ body {
 
 }
 
-#notebookModal h2 {
+#modal-outfits ul, #modal-stationary h2 {
     color: var(--maroon);
     font-size: 1.8rem;
     margin-bottom: 12px;
 }
 
-#notebookModal ul {
+#modal-outfits ul, #modal-stationary ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#notebookModal li {
+#modal-outfits ul, #modal-stationary li {
     color: var(--maroon);
     font-size: 1.1rem;
     margin-bottom: 8px;
@@ -125,16 +127,16 @@ body {
 
 /* for spacing to stay even */
 
-#notebookModal li:last-child {
+#modal-outfits li:last-child, #modal-stationary li:last-child {
     margin-bottom: 0;
 }
 
-#notebookModal li::before {
+#modal-outfits li::before, #modal-stationary li::before {
     content: "🍒 ";
     margin-right: 4px;
 }
 
-/* Close Button */
+
 .close-btn {
     margin-top: 18px;
     background-color: var(--cream);
@@ -158,3 +160,9 @@ body {
     transform: translateY(1px);
     box-shadow: 2px 2px 0px var(--maroon);
 }
+
+@keyframes blinkSettle {
+  0% { opacity: 0; transform: scale(0.9); }
+  30% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; transform: scale(1); }}

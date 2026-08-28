@@ -1,8 +1,7 @@
-function openNotebook(categoryName) {
-    document.getElementById('modalTitle').innerText = categoryName + " CheckList:";
-    document.getElementById('notebookModal').style.display = 'flex';
+function openNotebook(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
 }
 
-function closeNotebook() {
-    document.getElementById('notebookModal').style.display = 'none';
+function closeNotebook(modalId) {
+    document.getElementById(modalId).style.display = 'none';
 }
